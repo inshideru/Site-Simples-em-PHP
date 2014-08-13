@@ -14,9 +14,13 @@ body {
 }
 .banner-main {
     background-image: url('../img/serenity.jpg');
-    background-position: bottom;
+    background-position: left;
 }
 .produto-img {
     width: 200px;
     height: 200px;
+}
+.input-group-addon {
+    background-color: #428bca;
+    color: #ffffff;
 }

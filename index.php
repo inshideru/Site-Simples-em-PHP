@@ -31,11 +31,11 @@
             </div>
             <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav" id="main-nav">
-                    <li><a href="?go=home">Home</a></li>
-                    <li><a href="?go=empresa">Empresa</a></li>
-                    <li><a href="?go=produtos">Produtos</a></li>
-                    <li><a href="?go=servicos">Serviços</a></li>
-                    <li><a href="?go=contato">Contato</a></li>
+                    <li><a href="?go=home"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+                    <li><a href="?go=empresa"><span class="glyphicon glyphicon-briefcase"></span> Empresa</a></li>
+                    <li><a href="?go=produtos"><span class="glyphicon glyphicon-shopping-cart"></span> Produtos</a></li>
+                    <li><a href="?go=servicos"><span class="glyphicon glyphicon-list-alt"></span> Serviços</a></li>
+                    <li><a href="?go=contato"><span class="glyphicon glyphicon-envelope"></span> Contato</a></li>
                 </ul>
             </div>
             <!-- collapse -->

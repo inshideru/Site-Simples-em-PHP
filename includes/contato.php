@@ -8,48 +8,73 @@
         <?php
         if (!$_POST) {
             ?>
-            <h4>Formulário</h4>
 
             <form role="form" class="form-horizontal" method="post" action="?go=contato">
                 <fieldset>
                     <div class="form-group">
                         <label for="nome" class="col-lg-2 control-label">Nome</label>
 
+
                         <div class="col-lg-10">
-                            <input type="text" name="nome" class="form-control" id="nome" placeholder="Nome">
+                            <div class="input-group">
+                                <div class="input-group-addon"><span class="glyphicon glyphicon-user"></span></div>
+                                <input type="text" name="nome" class="form-control" id="nome" placeholder="Nome"
+                                       required="required">
+                            </div>
                         </div>
                     </div>
                     <div class="form-group">
                         <label for="email" class="col-lg-2 control-label">E-mail</label>
 
                         <div class="col-lg-10">
-                            <input type="email" name="email" class="form-control" id="email" placeholder="E-mail">
+                            <div class="input-group">
+                                <div class="input-group-addon">@</div>
+                                <input type="email" name="email" class="form-control" id="email" placeholder="E-mail"
+                                       required="required">
+                            </div>
                         </div>
                     </div>
                     <div class="form-group">
                         <label for="assunto" class="col-lg-2 control-label">Assunto</label>
 
                         <div class="col-lg-10">
-                            <input type="text" name="assunto" class="form-control" id="assunto" placeholder="assunto">
+                            <div class="input-group">
+                                <div class="input-group-addon"><span class="glyphicon glyphicon-share-alt"></span></div>
+                                <input type="text" name="assunto" class="form-control" id="assunto"
+                                       placeholder="assunto"
+                                       required="required">
+                            </div>
                         </div>
                     </div>
                     <div class="form-group">
                         <label for="mensagem" class="col-lg-2 control-label">Mensagem</label>
 
                         <div class="col-lg-10">
-                            <textarea class="form-control" name="mensagem" placeholder="Sua mensagem" rows="5"></textarea>
+                            <div class="input-group">
+                                <div class="input-group-addon"><span class="glyphicon glyphicon-comment"></span></div>
+                            <textarea class="form-control" name="mensagem" placeholder="Sua mensagem" rows="5"
+                                      required="required"></textarea>
+                                </div>
                         </div>
                     </div>
-                    <button type="submit" class="btn btn-default">Enviar</button>
+                    <div class="form-group col-lg-3">
+                        <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-send"></span>
+                            Enviar
+                        </button>
+                    </div>
                 </fieldset>
             </form>
 
         <?php
         } else {
             ?>
-            <h4>Obrigado!</h4>
-            <p>
-                Dados enviados com sucesso, abaixo seguem os dados que você enviou:
+            <div class="alert alert-success">
+                <h4><span class="glyphicon glyphicon-thumbs-up"></span> Obrigado!</h4>
+
+                <p>
+                    Dados enviados com sucesso, abaixo seguem os dados que você enviou:
+                </p>
+            </div>
             <hr>
             <ul>
                 <li><strong>Nome:</strong> <?php echo $_POST['nome']; ?></li>
@@ -57,7 +82,7 @@
                 <li><strong>Assunto:</strong> <?php echo $_POST['assunto']; ?></li>
                 <li><strong>Mensagem:</strong> <br><?php echo $_POST['mensagem']; ?></li>
             </ul>
-            </p>
+
         <?php
         }
         ?>
