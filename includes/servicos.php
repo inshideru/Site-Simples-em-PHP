@@ -1,7 +1,3 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: Vinicius
- * Date: 13/08/14
- * Time: 12:52
- */ 
+<div class="page-header">
+    <h1>Serviços</h1>
+</div>

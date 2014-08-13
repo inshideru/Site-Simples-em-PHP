@@ -27,7 +27,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="?go=Home">Simples SPhp</a>
+                <a class="navbar-brand" href="?go=home">SSPhp</a>
             </div>
             <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav" id="main-nav">
@@ -44,11 +44,8 @@
 
     <!-- Corpo -->
     <div class="container">
-        <div class="page-header">
-            <h1>Simples Projeto</h1>
-        </div>
+
         <?php
-        var_dump($_GET);
         $paginas = ['home', 'empresa', 'produtos', 'servicos', 'contato'];
         $go = 'home';
         if (isset($_GET) && isset($_GET['go'])) {
@@ -66,7 +63,7 @@
 
         ?>
 
-        <div class="footer">
+        <div class="footer footer-main">
             Todos os direitos reservados - <?php echo date('Y'); ?>
         </div>
     </div>
