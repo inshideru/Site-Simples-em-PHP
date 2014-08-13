@@ -37,7 +37,7 @@
                         <label for="mensagem" class="col-lg-2 control-label">Mensagem</label>
 
                         <div class="col-lg-10">
-                            <textarea class="form-control" name="mensagem" placeholder="Sua mensagem"></textarea>
+                            <textarea class="form-control" name="mensagem" placeholder="Sua mensagem" rows="5"></textarea>
                         </div>
                     </div>
                     <button type="submit" class="btn btn-default">Enviar</button>

@@ -1,9 +1,9 @@
-<div class="jumbotron">
+<div class="jumbotron banner-main">
     <div class="container">
         <h1>Projeto</h1>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque luctus, ipsum sed lacinia gravida,
-            lacus leo egestas odio, et condimentum sapien purus at libero.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+            Pellentesque luctus, ipsum sed lacinia gravida,lacus leo egestas.</p>
     </div>
 </div>
 
